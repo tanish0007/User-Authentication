@@ -121,3 +121,6 @@ npm start
 ├── 🪪 LICENSE
 └── 📝 README.md
 ```
+---
+
+<p align="center"> <b>You're good to go! 🚀</b> </p>
