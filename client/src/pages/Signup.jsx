@@ -16,27 +16,17 @@ const Signup = () => {
   }
 
   const handleError = (err) => {
-    toast.error(err, {
-      position: 'bottom-left'
-    })
+    toast.error(err, { position: 'bottom-left' })
   }
 
   const handleSuccess = (msg) => {
-    toast.success(msg, {
-      position: 'bottom-right'
-    })
+    toast.success(msg, { position: 'bottom-right' })
   }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post(
-        "http://localhost:4000/signup",
-        {
-          ...inputValue,
-        },
-        { withCredentials: true }
-      );
+      const { data } = await axios.post("http://localhost:4040/signup",{...inputValue}, { withCredentials: true });
       const { success, message } = data;
       if (success) {
         handleSuccess(message);
