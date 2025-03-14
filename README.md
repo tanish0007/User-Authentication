@@ -123,4 +123,4 @@ npm start
 ```
 ---
 
-<p align="center"> <b> You're good to go!😉 </b> </p>
+<h1 align="center"> <b> You're good to go!😉 </b> </h1>
