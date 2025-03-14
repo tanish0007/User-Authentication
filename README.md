@@ -4,12 +4,12 @@ Secure your **MERN Stack App** with **JWT-Based User Authentication and Authoriz
 
 ---
 ## Features
-✅ User Signup  
-✅ User Login  
-✅ Password Encryption with **bcrypt**  
-✅ JWT-based Authentication  
-✅ Protected Routes  
-✅ Cookie-based Session Handling
+✔️ User Signup  
+✔️ User Login  
+✔️ Password Encryption with **bcrypt**  
+✔️ JWT-based Authentication  
+✔️ Protected Routes  
+✔️ Cookie-based Session Handling
 
 ---
 
@@ -37,7 +37,27 @@ Secure your **MERN Stack App** with **JWT-Based User Authentication and Authoriz
 
 ## Installation
 
-### **Clone the repository**
+### 1️⃣ **Clone the repository**
 ```bash
 git clone https://github.com/tanish0007/User-Authentication.git
 cd User-Authentication
+```
+
+### 2️⃣ **Setup Backend**
+- navigate to the server folder:
+```bash
+cd server
+```
+- install dependencies:
+```bash
+npm install
+```
+- create a .env file:
+```bash
+touch .env
+```
+- add the following environment vairbles to .env:
+```ini
+MONGO_URL = "path of your MongoDB connection string"
+TOKEN_KEY = /* write a secret key */
+PORT = 4040 
